@@ -1,9 +1,9 @@
 package com.lin.lcchat.utils;
 
 /**
- * NAME   :  WebChat/com.amayadream.webchat.utils
- * Author :  Amayadream
- * Date   :  2016.01.09 17:18
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  * TODO   :
  */
 public class WordDefined {

@@ -16,13 +16,14 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 /**
  * Author :  Amayadream
  * Date   :  2016.01.08 14:57
  * TODO   :  用户登录与注销
  */
-@RestController
+@Controller
 @RequestMapping(value = "/user")
 public class LoginController {
 
@@ -33,7 +34,8 @@ public class LoginController {
     private ILogService logService;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String login() {
+    public String login(Map<String,Object> map) {
+        map.put("hello","你好");
         return "login";
     }
 

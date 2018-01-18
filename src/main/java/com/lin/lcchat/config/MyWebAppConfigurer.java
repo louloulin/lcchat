@@ -5,6 +5,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+/**
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
+ */
 @Configuration
 public class MyWebAppConfigurer extends WebMvcConfigurerAdapter {
 

@@ -4,9 +4,9 @@ package com.lin.lcchat.utils;
 import com.lin.lcchat.pojo.Log;
 
 /**
- * NAME   :  LeaveSystem/com.amayadream.leave.util
- * Author :  Amayadream
- * Date   :  2015.12.29 15:07
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  * TODO   :
  */
 public class LogUtil {

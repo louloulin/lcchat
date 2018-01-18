@@ -3,9 +3,9 @@ package com.lin.lcchat.pojo;
 import org.springframework.stereotype.Repository;
 
 /**
- * NAME   :  WebChat/com.amayadream.webchat.pojo
- * Author :  Amayadream
- * Date   :  2016.01.08 14:06
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  * TODO   :
  */
 @Repository(value = "user")

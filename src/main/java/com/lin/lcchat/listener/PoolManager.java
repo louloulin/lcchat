@@ -15,8 +15,9 @@ import org.apache.commons.pool.impl.GenericObjectPool;
 import org.junit.Test;
 
 /**
- * @author :  Amayadream
- * @date :  2016.04.06 20:17
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  */
 public class PoolManager {
     private static String driver = "com.mysql.jdbc.Driver";

@@ -4,9 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Author :  Amayadream
- * Date   :  2016.01.09 17:54
- * TODO   :  路由控制器
+ *  @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  */
 @Controller
 @RequestMapping(value = "")

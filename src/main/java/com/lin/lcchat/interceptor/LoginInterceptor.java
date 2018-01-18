@@ -16,8 +16,8 @@ import java.util.List;
  */
 public class LoginInterceptor extends HandlerInterceptorAdapter {
 
-    private List<String> IGNORE_URI;
-
+//    private List<String> IGNORE_URI;
+    private static ThreadLocal<String> s = new ThreadLocal<>();
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //获取URI后缀
@@ -27,12 +27,12 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
             return true;
         }
 
-        //过滤不需要拦截的地址
-        for (String uri : IGNORE_URI) {
-            if (requestUri.startsWith(uri)) {
-                return true;
-            }
-        }
+//        //过滤不需要拦截的地址
+//        for (String uri : IGNORE_URI) {
+//            if (requestUri.startsWith(uri)) {
+//                return true;
+//            }
+//        }
         HttpSession session = request.getSession();
         if(session != null && session.getAttribute("login_status") != null){
             return true;
@@ -47,11 +47,11 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         super.postHandle(request, response, handler, modelAndView);
     }
 
-    public List<String> getIGNORE_URI() {
-        return IGNORE_URI;
-    }
-
-    public void setIGNORE_URI(List<String> IGNORE_URI) {
-        this.IGNORE_URI = IGNORE_URI;
-    }
+//    public List<String> getIGNORE_URI() {
+//        return IGNORE_URI;
+//    }
+//
+//    public void setIGNORE_URI(List<String> IGNORE_URI) {
+//        this.IGNORE_URI = IGNORE_URI;
+//    }
 }

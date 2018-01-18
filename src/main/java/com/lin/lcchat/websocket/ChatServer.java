@@ -15,8 +15,9 @@ import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
  * websocket服务
- * @author  :  Amayadream
- * @time   :  2016.01.08 09:50
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  */
 @ServerEndpoint(value = "/chatServer", configurator = HttpSessionConfigurator.class)
 public class ChatServer {

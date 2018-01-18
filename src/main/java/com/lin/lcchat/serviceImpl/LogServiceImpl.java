@@ -10,9 +10,9 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * NAME   :  WebChat/com.amayadream.webchat.serviceImpl
- * Author :  Amayadream
- * Date   :  2016.01.09 16:43
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  * TODO   :
  */
 @Service(value = "logService")

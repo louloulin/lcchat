@@ -6,9 +6,9 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 
 /**
- * NAME   :  EmailSystem/com.amayadream.emailsystem.util
- * Author :  Amayadream
- * Date   :  2015.12.04 22:58
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  * TODO   :
  */
 public class FileUtil {

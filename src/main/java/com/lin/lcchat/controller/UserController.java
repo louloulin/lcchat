@@ -20,9 +20,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
- * NAME   :  WebChat/com.amayadream.webchat.controller
- * Author :  Amayadream
- * Date   :  2016.01.09 17:56
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  * TODO   :  用户控制器
  */
 @Controller

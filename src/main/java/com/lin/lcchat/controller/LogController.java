@@ -13,9 +13,10 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * Author :  Amayadream
- * Date   :  2016.01.10 00:23
- * TODO   :
+ *
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  */
 @Controller
 @RequestMapping(value = "")

@@ -5,8 +5,9 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @author :  Amayadream
- * @time :  2016.02.01 16:34
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  */
 public class CommonDate {
 

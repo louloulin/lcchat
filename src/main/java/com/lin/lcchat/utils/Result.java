@@ -3,9 +3,9 @@ package com.lin.lcchat.utils;
 import java.util.HashMap;
 
 /**
- * 公共返回类
- * @author :  Amayadream
- * @time :  2016.01.30 13:57
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  */
 public class Result extends HashMap {
     public static final int SUCCESS = 0;

@@ -10,9 +10,9 @@ import java.io.IOException;
 import java.util.Iterator;
 
 /**
- * NAME   :  EmailSystem/com.amayadream.emailsystem.util
- * Author :  Amayadream
- * Date   :  2015.12.05 15:22
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  * TODO   :  文件上传工具类
  */
 public class UploadUtil {

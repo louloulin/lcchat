@@ -1,0 +1,39 @@
+#spring:
+#    datasource:
+#        name: test
+#        url: jdbc:mysql://127.0.0.1:3306/webchat?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+#        username: root
+#        password: 199288
+#        # 使用druid数据源
+#        driver-class-name: com.mysql.jdbc.Driver
+#        filters: stat
+#        maxActive: 20
+#        initialSize: 0
+#        maxWait: 60000
+#        minIdle: 1
+#        maxIdle: 20
+#        timeBetweenEvictionRunsMillis: 60000
+#        minEvictableIdleTimeMillis: 300000
+#        testWhileIdle: true
+#        testOnBorrow: false
+#        testOnReturn: false
+#        poolPreparedStatements: true
+#        maxOpenPreparedStatements: 20
+#
+##    thymeleaf:
+##       cache: false
+##       prefix: classpath:/templates/view/
+##       suffix: .html
+##       encoding: UTF-8
+##       content-type: text/html
+##       mode: HTML5
+#
+#    mvc:
+#      view:
+#        suffix: .jsp
+#        prefix: /WEB-INF/view/
+#
+#
+#
+#mybatis:
+#  mapperLocations: classpath:mapper/*.xml

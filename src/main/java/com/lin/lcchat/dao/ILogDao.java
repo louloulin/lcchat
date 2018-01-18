@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * NAME   :  WebChat/com.amayadream.webchat.dao
- * Author :  Amayadream
- * Date   :  2016.01.09 16:39
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  */
 @Service(value = "logDao")
 public interface ILogDao {

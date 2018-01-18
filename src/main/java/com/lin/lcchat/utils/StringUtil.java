@@ -3,8 +3,9 @@ package com.lin.lcchat.utils;
 import java.util.UUID;
 
 /**
- * @author :  Amayadream
- * @date :  2017.01.11 19:03
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  */
 public class StringUtil {
 

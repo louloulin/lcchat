@@ -6,9 +6,9 @@ import com.lin.lcchat.pojo.Log;
 import java.util.List;
 
 /**
- * NAME   :  WebChat/com.amayadream.webchat.service
- * Author :  Amayadream
- * Date   :  2016.01.09 16:42
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  * TODO   :
  */
 public interface ILogService {

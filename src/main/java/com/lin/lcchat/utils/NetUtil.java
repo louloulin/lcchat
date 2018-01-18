@@ -3,9 +3,9 @@ package com.lin.lcchat.utils;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * NAME   :  LeaveSystem/com.amayadream.leave.util
- * Author :  Amayadream
- * Date   :  2015.12.29 16:22
+ * @author: chong.lin
+ * @date: 2018/1/17 下午2:33
+ * @company: 易宝支付(YeePay)
  * TODO   :  网络工具类
  */
 public class NetUtil {
