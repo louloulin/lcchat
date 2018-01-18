@@ -5,7 +5,7 @@
 
 	<groupId>com.lin</groupId>
 	<artifactId>lcchat</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<packaging>war</packaging>
 
 	<name>lcchat</name>
@@ -226,6 +226,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>lcchat</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
