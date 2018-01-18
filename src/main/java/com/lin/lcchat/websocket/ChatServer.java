@@ -2,6 +2,7 @@ package com.lin.lcchat.websocket;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpSession;
 import javax.websocket.*;
@@ -20,6 +21,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
  * @company: 易宝支付(YeePay)
  */
 @ServerEndpoint(value = "/chatServer", configurator = HttpSessionConfigurator.class)
+@Component
 public class ChatServer {
     private static int onlineCount = 0; //静态变量，用来记录当前在线连接数。应该把它设计成线程安全的。
     private static CopyOnWriteArraySet<ChatServer> webSocketSet = new CopyOnWriteArraySet<ChatServer>();

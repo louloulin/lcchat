@@ -1,5 +1,7 @@
 package com.lin.lcchat.websocket;
 
+import org.springframework.stereotype.Component;
+
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.util.Collections;
@@ -13,6 +15,7 @@ import java.util.Map;
  * TODO   :
  */
 @ServerEndpoint(value = "/videoServer", configurator = HttpSessionConfigurator.class)
+@Component
 public class VideoServer {
     private static final int MAX_CONNECTION = 20;
     private static final long MAX_TIMEOUT = 2 * 60 * 1000;

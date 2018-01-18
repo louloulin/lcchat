@@ -24,7 +24,7 @@ public class UploadUtil {
      * @param userid    用户名
      * @return
      */
-    public String upload(HttpServletRequest request, String folder, String userid){
+    public String upload(HttpServletRequest request, String folder, String userid) throws IOException {
         FileUtil fileUtil = new FileUtil();
         String file_url = "";
         //创建一个通用的多部分解析器
@@ -49,9 +49,13 @@ public class UploadUtil {
                         String fileName =  userid + "." + prefix;
                         //定义上传路径,格式为 upload/Amayadream/Amayadream.jpg
                         String path = request.getServletContext().getRealPath("/") + folder + "/" + userid;
+                        File parentDirectory = new File(path);
+                        if(!parentDirectory.exists()){
+                            parentDirectory.mkdirs();
+                        }
                         File localFile = new File(path, fileName);
                         if(!localFile.exists()){
-                            localFile.mkdirs();
+                            localFile.createNewFile();
                         }
                         try {
                             file.transferTo(localFile);

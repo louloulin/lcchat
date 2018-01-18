@@ -7,6 +7,7 @@ package com.lin.lcchat.config;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 
 import javax.servlet.MultipartConfigElement;
 
@@ -33,5 +34,14 @@ public class MyConfiguration {
         /// 设置总上传数据总大小
         factory.setMaxRequestSize("102400KB");
         return factory.createMultipartConfig();
+    }
+
+    /**
+     * websocket配置
+     * @return
+     */
+    @Bean
+    public ServerEndpointExporter serverEndpointExporter() {
+        return new ServerEndpointExporter();
     }
 }

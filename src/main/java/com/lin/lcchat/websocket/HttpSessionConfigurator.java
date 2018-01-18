@@ -1,5 +1,7 @@
 package com.lin.lcchat.websocket;
 
+import org.springframework.stereotype.Component;
+
 import javax.servlet.http.HttpSession;
 import javax.websocket.HandshakeResponse;
 import javax.websocket.server.HandshakeRequest;
@@ -11,6 +13,7 @@ import javax.websocket.server.ServerEndpointConfig;
  * @company: 易宝支付(YeePay)
  * TODO   :
  */
+@Component
 public class HttpSessionConfigurator extends ServerEndpointConfig.Configurator  {
     @Override
     public void modifyHandshake(ServerEndpointConfig config, HandshakeRequest request, HandshakeResponse response){
