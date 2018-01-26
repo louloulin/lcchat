@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
  * @date: 2018/1/26 下午12:04
  * @company: 易宝支付(YeePay)
  */
-public class MyLoader implements Loader<TemplateBean,List<Object>> {
+public class MyLoader implements Loader<TemplateBean> {
     private static Pattern r = Pattern.compile( "(\\$\\{)(\\w+)(\\})");
 
     /**
@@ -38,8 +38,7 @@ public class MyLoader implements Loader<TemplateBean,List<Object>> {
      * @param languages
      * @return
      */
-    public TemplateBean loader(TemplateBean templateBean, List<Object> languages) {
-
+    public TemplateBean loader(TemplateBean templateBean, List languages) {
         TableBean table = templateBean.getTable();
         if(table == null){
             return templateBean;
@@ -56,6 +55,24 @@ public class MyLoader implements Loader<TemplateBean,List<Object>> {
         });
         return templateBean;
     }
+//    public TemplateBean loader(TemplateBean templateBean, Object languages) {
+//
+//        TableBean table = templateBean.getTable();
+//        if(table == null){
+//            return templateBean;
+//        }
+//        List<String> tbody = table.getTbody();
+//        ExpressionParser parser = new SpelExpressionParser();
+//        languages.forEach(language -> {
+//            List<String> tb = new ArrayList<>();
+//            tbody.forEach(el->{
+//                String o = (String) parserEL(el, language);
+//                tb.add(o);
+//            });
+//            templateBean.getTable().getTbodyRes().add(tb);
+//        });
+//        return templateBean;
+//    }
 
     /**
      * 解析器

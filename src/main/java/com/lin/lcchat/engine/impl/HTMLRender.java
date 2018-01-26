@@ -8,7 +8,6 @@ import com.lin.lcchat.engine.Render;
 import com.lin.lcchat.engine.bean.TableBean;
 import com.lin.lcchat.engine.bean.TemplateBean;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -37,10 +36,10 @@ public class HTMLRender implements Render<TemplateBean> {
         }
         List<String> th = table.getTh();
         String ths ="<td>" +String.join("</td>\n<td>", th)+"</td>\n";
-        stringBuilder.append(ths).append("</tr>");
+        stringBuilder.append(ths).append("</tr>\n");
         List<List<String>> tbodyRes = table.getTbodyRes();
         tbodyRes.forEach(tbodyRe ->{
-                 String s1 = "<tr >\n<td>" + String.join("</td>\n<td>",tbodyRe)+"</td>\n</tr>\n";
+                 String s1 = "<tr>\n<td>" + String.join("</td>\n<td>",tbodyRe)+"</td>\n</tr>\n";
                  stringBuilder.append(s1);
                 }
         );

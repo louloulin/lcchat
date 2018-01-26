@@ -20,11 +20,11 @@ import java.util.List;
  * @date: 2018/1/26 上午10:49
  * @company: 易宝支付(YeePay)
  */
-public final class TemplateEngine<T,S> {
+public final class TemplateEngine<T> {
     private Parser parser = new YamlParser("email");
     private Loader loader = new MyLoader();
     private Render render = new HTMLRender();
-    public T handler(S s){
+    public T handler(List s){
         Object p = this.parser.parser();
         Object loader = this.loader.loader(p, s);
         String render = this.render.render(loader);
@@ -32,7 +32,7 @@ public final class TemplateEngine<T,S> {
     }
 
     public static void main(String[] args) {
-        TemplateEngine<String,List<Language>> stringTemplateEngine = new TemplateEngine<>();
+        TemplateEngine<Object> stringTemplateEngine = new TemplateEngine<>();
         List<Language> languages = new ArrayList<>();
         Language language1 = new Language("english","en","te","s");
         Language language2 = new Language("chinses","cn","ss","s");
