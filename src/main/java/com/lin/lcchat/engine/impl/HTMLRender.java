@@ -32,6 +32,9 @@ public class HTMLRender implements Render<TemplateBean> {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(formatTitle).append(tbPrex).append(trPrex);
         TableBean table = templateBean.getTable();
+        if(table == null){
+            return formatTitle;
+        }
         List<String> th = table.getTh();
         String ths ="<td>" +String.join("</td>\n<td>", th)+"</td>\n";
         stringBuilder.append(ths).append("</tr>");

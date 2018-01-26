@@ -7,6 +7,7 @@ package com.lin.lcchat.engine.impl;
 import com.lin.lcchat.engine.Loader;
 import com.lin.lcchat.engine.bean.Language;
 import com.lin.lcchat.engine.bean.ResultBean;
+import com.lin.lcchat.engine.bean.TableBean;
 import com.lin.lcchat.engine.bean.TemplateBean;
 import com.lin.lcchat.engine.util.TemplateParserContext;
 import com.lin.lcchat.utils.Iterables;
@@ -39,7 +40,11 @@ public class MyLoader implements Loader<TemplateBean,List<Object>> {
      */
     public TemplateBean loader(TemplateBean templateBean, List<Object> languages) {
 
-        List<String> tbody = templateBean.getTable().getTbody();
+        TableBean table = templateBean.getTable();
+        if(table == null){
+            return templateBean;
+        }
+        List<String> tbody = table.getTbody();
         ExpressionParser parser = new SpelExpressionParser();
         languages.forEach(language -> {
             List<String> tb = new ArrayList<>();
@@ -66,7 +71,6 @@ public class MyLoader implements Loader<TemplateBean,List<Object>> {
         if(m.matches()){
             context.lookupVariable(m.group(2));
             value  = parser.parseExpression(el, new TemplateParserContext()).getValue(context);
-
         }else {
             System.out.println("解析失败");
         }
