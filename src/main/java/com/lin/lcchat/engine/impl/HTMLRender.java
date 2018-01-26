@@ -3,11 +3,9 @@
  * Company: 易宝支付(YeePay)
  */
 package com.lin.lcchat.engine.impl;
-
 import com.lin.lcchat.engine.Render;
 import com.lin.lcchat.engine.bean.TableBean;
 import com.lin.lcchat.engine.bean.TemplateBean;
-
 import java.util.List;
 
 /**
@@ -22,8 +20,6 @@ public class HTMLRender implements Render<TemplateBean> {
     private static String  tbPrex = "<table border='1'  cellspacing='0' width: 200px; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;>\n";
     private static String  tbSub = "</table>\n";
     private static String trPrex = "<tr bgcolor=lightgrey>\n";
-    private static String trSub = "</tr>\n";
-    private static String td = "<td>%s</td>\n";
     @Override
     public String render(TemplateBean templateBean) {
         String title = templateBean.getTitle();
@@ -43,7 +39,7 @@ public class HTMLRender implements Render<TemplateBean> {
                  stringBuilder.append(s1);
                 }
         );
-        stringBuilder.append("</table>");
+        stringBuilder.append(tbSub);
         return stringBuilder.toString();
     }
 }

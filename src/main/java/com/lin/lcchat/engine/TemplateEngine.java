@@ -6,7 +6,7 @@ package com.lin.lcchat.engine;
 
 import com.lin.lcchat.engine.bean.Language;
 import com.lin.lcchat.engine.impl.HTMLRender;
-import com.lin.lcchat.engine.impl.MyLoader;
+import com.lin.lcchat.engine.impl.DefaultLoader;
 import com.lin.lcchat.engine.impl.YamlParser;
 
 import java.util.ArrayList;
@@ -20,19 +20,19 @@ import java.util.List;
  * @date: 2018/1/26 上午10:49
  * @company: 易宝支付(YeePay)
  */
-public final class TemplateEngine<T> {
+public final class TemplateEngine {
     private Parser parser = new YamlParser("email");
-    private Loader loader = new MyLoader();
+    private Loader loader = new DefaultLoader();
     private Render render = new HTMLRender();
-    public T handler(List s){
+    public String handler(List s){
         Object p = this.parser.parser();
         Object loader = this.loader.loader(p, s);
         String render = this.render.render(loader);
-        return (T) render;
+        return render;
     }
 
     public static void main(String[] args) {
-        TemplateEngine<Object> stringTemplateEngine = new TemplateEngine<>();
+        TemplateEngine stringTemplateEngine = new TemplateEngine();
         List<Language> languages = new ArrayList<>();
         Language language1 = new Language("english","en","te","s");
         Language language2 = new Language("chinses","cn","ss","s");

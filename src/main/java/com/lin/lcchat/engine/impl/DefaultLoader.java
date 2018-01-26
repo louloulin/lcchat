@@ -22,14 +22,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 类名称: MyLoader <br>
+ * 类名称: DefaultLoader <br>
  * 类描述: <br>
  *
  * @author: chong.lin
  * @date: 2018/1/26 下午12:04
  * @company: 易宝支付(YeePay)
  */
-public class MyLoader implements Loader<TemplateBean> {
+public class DefaultLoader implements Loader<TemplateBean> {
     private static Pattern r = Pattern.compile( "(\\$\\{)(\\w+)(\\})");
 
     /**
@@ -55,24 +55,7 @@ public class MyLoader implements Loader<TemplateBean> {
         });
         return templateBean;
     }
-//    public TemplateBean loader(TemplateBean templateBean, Object languages) {
-//
-//        TableBean table = templateBean.getTable();
-//        if(table == null){
-//            return templateBean;
-//        }
-//        List<String> tbody = table.getTbody();
-//        ExpressionParser parser = new SpelExpressionParser();
-//        languages.forEach(language -> {
-//            List<String> tb = new ArrayList<>();
-//            tbody.forEach(el->{
-//                String o = (String) parserEL(el, language);
-//                tb.add(o);
-//            });
-//            templateBean.getTable().getTbodyRes().add(tb);
-//        });
-//        return templateBean;
-//    }
+
 
     /**
      * 解析器
