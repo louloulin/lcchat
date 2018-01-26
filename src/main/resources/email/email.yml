@@ -1,0 +1,12 @@
+title: 商户交易
+table:
+  th:
+    - 语言
+    - 别名
+    - 特点
+    - 缺点
+  tbody:
+    - ${language}
+    - ${alias}
+    - ${trait}
+    - ${weakness}

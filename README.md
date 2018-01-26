@@ -12,3 +12,10 @@
 ### 功能上的扩展
 1. 准备增加注册功能，博客功能，以及一些我现在还项目想不到功能
 2. 还没想好
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |

@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author: chong.lin
  * @date: 2018/1/17 下午2:33
@@ -15,6 +18,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 public class LcchatApplication extends SpringBootServletInitializer {
 
 
+
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 		return application.sources(LcchatApplication.class);
@@ -22,6 +26,7 @@ public class LcchatApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(LcchatApplication.class, args);
+		List<String> ss = new ArrayList<>();
 	}
 
 }
